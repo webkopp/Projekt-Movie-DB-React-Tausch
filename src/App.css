@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root{
+  --divContainer-width: calc((100vw - 2 * var(--padding-global)) / 6);
+  --padding-global: 1rem;
+  --color-container: #1a1a1a;
+  --color-background: rgba(244, 244, 244)
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+input {
+  width: 40vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+main {
+  background: var(--color-background);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 var(--padding-global)
+}
